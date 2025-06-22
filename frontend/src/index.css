@@ -1,10 +1,56 @@
 
+/* index.css */
+
 body {
   font-family: 'Lora', serif;
   margin: 0;
   padding: 0;
   color: #1a1a1a;
+  background-color: #fdfdfd;
 }
+
+.home-section {
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.logo-image {
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.bandcamp-button {
+  background-color: #3a3a3a;
+  color: #eee;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(58, 58, 58, 0.8);
+  transition: background-color 0.3s ease;
+}
+
+.bandcamp-button:hover {
+  background-color: #575757;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

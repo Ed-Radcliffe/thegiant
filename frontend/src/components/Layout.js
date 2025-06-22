@@ -5,7 +5,7 @@ function Layout({ children }) {
   return (
     <>
       <Navbar />
-      <main style={{ padding: "2rem", minHeight: "70vh" }}>{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   );
