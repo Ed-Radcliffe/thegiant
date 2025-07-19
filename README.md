@@ -35,6 +35,19 @@ npm start
 
 4. The frontend will be available at http://localhost:3000.
 
+
+## Frontend Setup and Dependencies
+
+### React Router DOM
+
+We use [React Router DOM](https://reactrouter.com/en/main) to enable multiple pages (routing) in the frontend React app.
+
+To install React Router DOM, run this command in the `frontend` directory:
+
+```bash
+npm install react-router-dom
+
+
 ## Project Overview
 This project aims to create an interactive website for the band "The Giant," including:
 
@@ -45,6 +58,24 @@ Image galleries and media hosting (planned)
 Links to social media profiles
 
 Admin panel for non-technical users to add news stories (planned)
+
+
+## 🚀 Deployment
+
+This project is deployed on **GitHub Pages** at:
+
+👉 [https://ed-radcliffe.github.io/thegiant](https://ed-radcliffe.github.io/thegiant)
+
+To update the deployed site:
+
+1. Make sure your changes are committed and pushed to the `main` branch:
+
+   ```bash
+   git add .
+   git commit -m "Update site"
+   git push
+
+2. npm run deploy
 
 # Future Work
 Deployment setup
