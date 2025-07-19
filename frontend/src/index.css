@@ -1,10 +1,37 @@
 /* Base styles */
-body {
-  font-family: 'Lora', serif;
+html, body, #root {
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Lora', serif;
   color: #1a1a1a;
   background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Layout container wraps navbar, main, footer */
+.layout-container {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Main content grows to push footer down */
+.layout-main {
+  flex-grow: 1;
+  padding: 2rem; /* Optional, matches your section padding */
 }
 
 /* Navbar */
@@ -151,7 +178,6 @@ body {
   font-style: italic;
   color: #666;
 }
-
 
 /* Footer */
 
