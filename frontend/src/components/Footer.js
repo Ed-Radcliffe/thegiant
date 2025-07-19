@@ -7,19 +7,13 @@ import {
 
 function Footer() {
   return (
-    <footer
-      style={{
-        padding: "1rem",
-        borderTop: "1px solid #ccc",
-        textAlign: "center",
-        marginTop: "2rem",
-      }}
-    >
+    <footer className="footer">
       <a
         href="https://facebook.com/thegiantdoomband"
         target="_blank"
         rel="noreferrer"
-        style={{ marginRight: "1rem" }}
+        className="footer-link"
+        aria-label="Facebook"
       >
         <FontAwesomeIcon icon={faFacebook} size="2x" />
       </a>
@@ -27,7 +21,8 @@ function Footer() {
         href="https://instagram.com/thegiantdoomband"
         target="_blank"
         rel="noreferrer"
-        style={{ marginRight: "1rem" }}
+        className="footer-link"
+        aria-label="Instagram"
       >
         <FontAwesomeIcon icon={faInstagram} size="2x" />
       </a>
@@ -35,6 +30,8 @@ function Footer() {
         href="https://thegiant1.bandcamp.com/album/seasons"
         target="_blank"
         rel="noreferrer"
+        className="footer-link"
+        aria-label="Bandcamp"
       >
         <FontAwesomeIcon icon={faBandcamp} size="2x" />
       </a>
@@ -43,4 +40,3 @@ function Footer() {
 }
 
 export default Footer;
-
