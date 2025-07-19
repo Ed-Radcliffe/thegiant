@@ -7,6 +7,74 @@ body {
   background-color: #fdfdfd;
 }
 
+/* Navbar */
+
+.navbar {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdfdfd;
+  font-family: 'Lora', serif;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.navbar-title-link {
+  text-decoration: none;
+  color: #1a1a1a;
+  outline: none; /* Remove default outline */
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-title-link:hover {
+  color: #575757;
+}
+
+/* Show custom focus only when keyboard navigating */
+.navbar-title-link:focus-visible {
+  outline: 2px solid #3a3a3a;
+  outline-offset: 2px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.2s ease;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.nav-link:hover {
+  color: #575757;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #3a3a3a;
+}
+
+/* Show custom focus for nav links when keyboard navigating */
+.nav-link:focus-visible {
+  outline: 2px solid #3a3a3a;
+  outline-offset: 2px;
+}
+
 /* Shared layout section */
 .section {
   padding: 4rem 2rem;
@@ -58,4 +126,28 @@ body {
 .logo-image {
   max-width: 300px;
   margin-bottom: 1rem;
+}
+
+/* Media placeholder styles */
+.media-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-box {
+  width: 100%;
+  max-width: 700px;
+  height: 120px;
+  background-color: #eaeaea;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-text {
+  font-style: italic;
+  color: #666;
 }

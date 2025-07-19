@@ -1,15 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
+  const location = useLocation();
+
   return (
-    <nav style={{ padding: "1rem", borderBottom: "1px solid #ccc", display: "flex", justifyContent: "space-between" }}>
-      <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>
-        The Giant
+    <nav className="navbar">
+      <div className="navbar-title">
+        <Link to="/" className="navbar-title-link">
+          The Giant
+        </Link>
       </div>
-      <div>
-        <Link to="/" style={{ marginRight: "1rem" }}>Home</Link>
-        <Link to="/about" style={{ marginRight: "1rem" }}>About</Link>
-        <Link to="/media">Media</Link>
+      <div className="navbar-links">
+        <Link to="/" className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}>
+          Home
+        </Link>
+        <Link to="/about" className={location.pathname === '/about' ? 'nav-link active' : 'nav-link'}>
+          About
+        </Link>
+        <Link to="/media" className={location.pathname === '/media' ? 'nav-link active' : 'nav-link'}>
+          Media
+        </Link>
       </div>
     </nav>
   );
