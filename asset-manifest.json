@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/thegiant/static/css/main.f4be681c.css",
+    "main.js": "/thegiant/static/js/main.90169a4a.js",
+    "static/js/453.670e15c7.chunk.js": "/thegiant/static/js/453.670e15c7.chunk.js",
+    "index.html": "/thegiant/index.html",
+    "main.f4be681c.css.map": "/thegiant/static/css/main.f4be681c.css.map",
+    "main.90169a4a.js.map": "/thegiant/static/js/main.90169a4a.js.map",
+    "453.670e15c7.chunk.js.map": "/thegiant/static/js/453.670e15c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4be681c.css",
+    "static/js/main.90169a4a.js"
+  ]
+}
